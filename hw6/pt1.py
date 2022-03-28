@@ -15,7 +15,7 @@ class Image:
 class ImageProxy:
     def __init__(self):
         self.wait_time = 2
-        self.placeholder = imread("placeholder-image.png")
+        self.placeholder = imread("hw6/placeholder.png")
     
     
     def check_and_placehold(self, load_time, img):
@@ -27,18 +27,19 @@ class ImageProxy:
             plt.imshow(img)
             plt.show()
         else:
-            print("Showing the image, no much time to load.")
+            print("Showing the image, no much time to load. Putin takes no time.")
             time.sleep(load_time)
             plt.imshow(img)
             plt.show()
         
     
 
-path = 'putin.jpeg'
+putin_path = 'hw6/putin.jpeg'
+zelensky_path = 'hw6/zelensky.jpg'
 load_time = 5
 
-user1 = Image(path=path, load_time=5)
-user2 = Image(path=path, load_time=1)
+user1 = Image(path=zelensky_path, load_time=5)
+user2 = Image(path=putin_path, load_time=1)
 
 user1.show_image()
 
