@@ -83,8 +83,8 @@ def run(pic_1, border):
 
 
 def main():
-    path_b = []
-    path_no_b = []
+    path_b = ["king_of_hearts.jpg", "7_spades.jpeg"]
+    path_no_b = ["ace_of_clubs.png","queen_of_hearts.jpeg","king_of_spades.jpeg","six_of_diamonds.png"]
     with_border = 1
     without_border = 0
     for i in path_b:
